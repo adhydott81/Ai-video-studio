@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>AI Video Studio Gratis</title>
+<style>
+:root{--bg:#0b1220;--panel:#121d2e;--panel2:#19263a;--line:#2b3b52;--text:#edf4ff;--muted:#a7b6cc;--accent:#70e1c1;--accent2:#8ab4ff;--danger:#ffb4a8}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#0b1220,#111d30 60%,#0b1220);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{padding:24px 16px 18px;border-bottom:1px solid var(--line);background:#0b1220d9;position:sticky;top:0;z-index:2;backdrop-filter:blur(10px)}
+.wrap{max-width:1050px;margin:auto}h1{margin:0;font-size:clamp(23px,5vw,34px);line-height:1.2}header p{margin:8px 0 0;color:var(--muted)}main{max-width:1050px;margin:18px auto;padding:0 12px 48px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px;min-width:0}.card h2{font-size:18px;margin:0 0 12px}.full{grid-column:1/-1}
+label{display:block;font-weight:650;margin:12px 0 6px}input,select,textarea{width:100%;background:#0b1422;border:1px solid #3a4b63;color:var(--text);border-radius:10px;padding:11px 12px;font:inherit}textarea{min-height:90px;resize:vertical}button{border:0;border-radius:10px;padding:11px 14px;font:inherit;font-weight:750;cursor:pointer;background:var(--accent);color:#10221f}button.secondary{background:#26364c;color:var(--text);border:1px solid #40536c}button.blue{background:var(--accent2);color:#0b1729}button.warn{background:#59322f;color:#ffe4df;border:1px solid #80514c}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.small{font-size:12px;color:var(--muted)}.note{background:#182b3b;border:1px solid #315064;padding:11px 12px;border-radius:10px;color:#d8efff;margin:12px 0}.scene{border:1px solid var(--line);border-radius:13px;padding:14px;margin:12px 0;background:#0e1827}.scene h3{margin:0 0 6px;font-size:16px}.scene .meta{color:var(--muted);font-size:12px;margin-bottom:8px}.scene textarea{min-height:105px;margin:5px 0}.scene label{font-size:13px;margin-top:8px}.scene-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}.pill{display:inline-block;background:#26374d;border-radius:999px;padding:3px 8px;font-size:12px;color:#d5e6ff}.empty{padding:20px;text-align:center;color:var(--muted);border:1px dashed #43536a;border-radius:12px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.full{grid-column:auto}header{position:static}.card{padding:13px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>🎬 AI Video Studio</h1><p>Studio cerita, prompt gambar, dan prompt video — gratis tanpa API key.</p></div></header>
+<main>
+<div class="note"><b>Mode gratis:</b> aplikasi ini menyusun cerita dan prompt di browser. Untuk merender gambar/video AI, salin prompt ke layanan pilihan Anda. Tidak ada API key yang diperlukan atau disimpan.</div>
+<div class="grid">
+<section class="card">
+<h2>1. Pengaturan proyek</h2>
+<label for="title">Judul proyek</label><input id="title" value="Petualangan Malam yang Kocak">
+<label for="genre">Genre / suasana</label><select id="genre"><option>Horor komedi Indonesia</option><option>Komedi slapstick</option><option>Petualangan fantasi</option><option>Drama keluarga</option><option>Aksi komedi</option><option>Dokumenter</option><option>Kustom</option></select>
+<label for="duration">Durasi target</label><select id="duration"><option value="10">10 menit</option><option value="12">12 menit</option><option value="15">15 menit</option></select>
+<label for="style">Gaya visual</label><input id="style" value="Cinematic 2D cartoon, bold black outlines, expressive characters, colorful hand-drawn backgrounds, dynamic camera movement">
+<label for="ratio">Rasio video</label><select id="ratio"><option>16:9 landscape</option><option>9:16 vertical</option><option>1:1 square</option></select>
+<label for="story">Ide / ringkasan cerita</label><textarea id="story" placeholder="Contoh: Dua sahabat tersesat di kuburan tua saat hujan...">Dua sahabat yang penakut tersesat di jalan setapak dekat kuburan tua. Mereka mengira melihat hantu, tetapi setiap kejadian berubah menjadi kekacauan lucu.</textarea>
+<div class="actions"><button id="make">✨ Buat adegan otomatis</button><button class="secondary" id="save">💾 Simpan proyek</button><button class="secondary" id="load">📂 Muat proyek</button></div>
+</section>
+<section class="card">
+<h2>2. Panduan konsistensi</h2>
+<label for="characters">Deskripsi karakter (jangan berubah antaradegan)</label><textarea id="characters">Karakter A: pria muda kurus, rambut hitam berantakan, kaus hijau, celana pendek cokelat, sandal jepit, ekspresi sangat takut.
+Karakter B: pria muda pendek dan gempal, rambut hitam runcing, kaus kuning, celana biru, sandal merah, sok berani tetapi mudah panik.</textarea>
+<label for="location">Lokasi utama</label><textarea id="location">Jalan setapak desa Indonesia pada malam hari, kuburan tua di sisi kiri, pohon pisang besar di belakang pagar bambu, genangan air, kabut tipis, cahaya bulan kebiruan.</textarea>
+<label for="props">Properti penting</label><textarea id="props">Senter kuning, ember plastik merah, batu nisan abu-abu, pohon pisang berdaun lebar, genangan air di jalan.</textarea>
+<label for="negative">Negative prompt umum</label><textarea id="negative">no dialogue, no subtitles, no text, no watermark, no extra limbs, no duplicate characters, no character redesign, no changing clothes, no inconsistent props</textarea>
+<p class="small">Tempel deskripsi karakter, lokasi, dan properti yang sama pada setiap generator gambar/video untuk membantu konsistensi.</p>
+</section>
+<section class="card full">
+<h2>3. Daftar adegan <span class="pill" id="count">0 adegan</span></h2>
+<div class="small">Setiap adegan memiliki prompt gambar dan prompt video terpisah. Anda bisa mengedit dan menyalin satu per satu.</div>
+<div id="scenes" class="empty" style="margin-top:12px">Belum ada adegan. Tekan “Buat adegan otomatis”.</div>
+<div class="actions"><button class="secondary" id="copyAll">📋 Salin semua prompt</button><button class="secondary" id="export">⬇️ Ekspor proyek JSON</button><button class="secondary" id="downloadTxt">⬇️ Unduh prompt TXT</button><button class="warn" id="clear">Hapus semua adegan</button></div>
+</section>
+<section class="card full">
+<h2>4. Cara menghasilkan video</h2>
+<ol>
+<li>Buat adegan otomatis, lalu periksa prompt setiap adegan.</li>
+<li>Salin prompt gambar ke generator <i>text-to-image</i> pilihan Anda.</li>
+<li>Gunakan gambar hasilnya sebagai referensi untuk generator <i>image-to-video</i>; salin prompt video dari adegan yang sama.</li>
+<li>Unduh klip, kemudian gabungkan di editor video seperti aplikasi penyunting video yang Anda miliki.</li>
+</ol>
+<div class="note">Penting: GitHub Pages hanya meng-host halaman web statis. Generator video AI tanpa batas dan gratis tidak dijamin tersedia. Jangan masukkan API key rahasia ke file HTML publik.</div>
+</section>
+</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let scenes=[];
+const beats=[
+["Pembukaan lokasi","Wide establishing shot memperlihatkan lokasi utama pada malam hari. Daun bergerak tertiup angin, kabut tipis, suasana misterius tetapi komikal."],
+["Karakter tiba","Kedua karakter berjalan masuk dengan langkah ragu. Karakter A memegang senter kuning, Karakter B berlagak berani."],
+["Suara mencurigakan","Ranting patah di belakang mereka. Keduanya berhenti bersamaan, mata membesar, lalu perlahan menoleh."],
+["Senter berkedip","Senter berkedip dan menyorot batu nisan. Bayangan panjang bergerak di dinding, membuat mereka saling bersembunyi."],
+["Salah paham","Karakter B menunjuk bayangan besar dengan percaya diri, tetapi bayangan itu ternyata berasal dari daun pisang."],
+["Kejutan kecil","Seekor kucing melompat dari balik ember merah. Kedua karakter meloncat ke udara dengan pose kartun berlebihan."],
+["Terpeleset","Karakter A mundur, menginjak genangan air, lalu meluncur lucu tanpa cedera ke tumpukan daun."],
+["Sok berani","Karakter B berjalan maju dengan dada dibusungkan, tetapi lututnya gemetar dan senter di tangannya bergetar."],
+["Bayangan bergerak","Kabut menebal dan siluet muncul di balik pohon. Kamera perlahan mendekat, membangun ketegangan komedi."],
+["Lari berantakan","Keduanya berlari berputar-putar, saling bertabrakan ringan, lalu bersembunyi di balik pohon pisang."],
+["Rahasia terungkap","Mereka menemukan sumber bayangan: kain yang tersangkut pada ranting dan bergerak tertiup angin."],
+["Penutup lucu","Keduanya tertawa lega. Saat hendak pergi, ember merah jatuh dengan bunyi keras dan mereka kembali meloncat ketakutan."]
+];
+function val(id){return $(id).value.trim()}
+function makeScenes(){
+ const mins=Number(val('duration')); const n=Math.max(12,Math.round(mins*1.2)); scenes=[];
+ for(let i=0;i<n;i++){
+  const b=beats[i%beats.length]; const extra=i>=beats.length?` Variasi lanjutan nomor ${i+1}: tingkatkan aksi komedi secara bertahap dan buat transisi masuk akal dari adegan sebelumnya.`:'';
+  const dur=Math.round(mins*60/n);
+  const base=`${val('style')}. ${val('ratio')}. Genre: ${val('genre')}. Adegan ${i+1}: ${b[0]}. ${b[1]} ${val('story')} Karakter konsisten: ${val('characters')} Lokasi konsisten: ${val('location')} Properti: ${val('props')} Komposisi sinematik, ekspresi jelas, pencahayaan terarah, gerak tubuh mudah dibaca.${extra} ${val('negative')}`;
+  const vid=`Durasi klip ${dur} detik. Animasi dari gambar referensi dengan karakter, pakaian, wajah, lokasi dan properti tetap sama. Aksi: ${b[1]} Kamera: slow push-in lalu tracking singkat mengikuti aksi, gerakan halus dengan timing komedi, ekspresi berlebihan, motion blur ringan hanya saat gerakan cepat. Audio: ambience malam, angin, langkah kaki dan efek komedi yang sesuai; tanpa dialog dan tanpa narasi. ${val('negative')}`;
+  scenes.push({title:b[0]+(i>=beats.length?` ${Math.floor(i/beats.length)+1}`:''),duration:dur,image:base,video:vid});
+ }
+ render();
+}
+function render(){
+ $('count').textContent=scenes.length+' adegan';
+ const root=$('scenes');
+ if(!scenes.length){root.className='empty';root.textContent='Belum ada adegan. Tekan “Buat adegan otomatis”.';return}
+ root.className='';
+ root.innerHTML=scenes.map((s,i)=>`<article class="scene"><h3>Adegan ${i+1}: ${esc(s.title)}</h3><div class="meta">Target klip: ${s.duration} detik</div><label>Judul adegan</label><input data-i="${i}" data-k="title" value="${attr(s.title)}"><label>Prompt Text-to-Image</label><textarea data-i="${i}" data-k="image">${esc(s.image)}</textarea><div class="scene-actions"><button class="blue" data-copy="${i}" data-type="image">Salin prompt gambar</button></div><label>Prompt Text-to-Video / Image-to-Video</label><textarea data-i="${i}" data-k="video">${esc(s.video)}</textarea><div class="scene-actions"><button class="blue" data-copy="${i}" data-type="video">Salin prompt video</button><button class="secondary" data-copy="${i}" data-type="both">Salin keduanya</button></div></article>`).join('');
+ root.querySelectorAll('[data-i]').forEach(el=>el.addEventListener('input',e=>{scenes[+e.target.dataset.i][e.target.dataset.k]=e.target.value}));
+ root.querySelectorAll('[data-copy]').forEach(el=>el.addEventListener('click',async e=>{const i=+e.currentTarget.dataset.copy,t=e.currentTarget.dataset.type,s=scenes[i];const txt=t==='image'?s.image:t==='video'?s.video:`TEXT-TO-IMAGE:\n${s.image}\n\nTEXT-TO-VIDEO / IMAGE-TO-VIDEO:\n${s.video}`;await copy(txt,e.currentTarget)}));
+}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function attr(s){return esc(s)}
+async function copy(txt,btn){try{await navigator.clipboard.writeText(txt);const old=btn.textContent;btn.textContent='Tersalin ✓';setTimeout(()=>btn.textContent=old,1200)}catch(e){const ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();alert('Prompt disalin jika izin clipboard diizinkan. Jika tidak, pilih teks pada kotak prompt lalu salin manual.')}} 
+function data(){return {version:1,title:val('title'),genre:val('genre'),duration:val('duration'),style:val('style'),ratio:val('ratio'),story:val('story'),characters:val('characters'),location:val('location'),props:val('props'),negative:val('negative'),scenes}}
+function apply(d){['title','genre','duration','style','ratio','story','characters','location','props','negative'].forEach(k=>{if(d[k]!==undefined)$(k).value=d[k]});scenes=Array.isArray(d.scenes)?d.scenes:[];render()}
+$('make').onclick=makeScenes;
+$('save').onclick=()=>{localStorage.setItem('aivideo_studio_project',JSON.stringify(data()));alert('Proyek disimpan di browser ini.')};
+$('load').onclick=()=>{try{const d=JSON.parse(localStorage.getItem('aivideo_studio_project')||'null');if(!d){alert('Belum ada proyek tersimpan di browser ini.');return}apply(d);alert('Proyek berhasil dimuat.')}catch(e){alert('Gagal memuat proyek.')}};
+$('copyAll').onclick=()=>copy(scenes.map((s,i)=>`ADEGAN ${i+1}: ${s.title}\nTEXT-TO-IMAGE:\n${s.image}\n\nTEXT-TO-VIDEO / IMAGE-TO-VIDEO:\n${s.video}`).join('\n\n--------------------\n\n'),$('copyAll'));
+$('export').onclick=()=>download('ai-video-studio-project.json',JSON.stringify(data(),null,2),'application/json');
+$('downloadTxt').onclick=()=>download('ai-video-studio-prompts.txt',scenes.map((s,i)=>`ADEGAN ${i+1}: ${s.title}\nTEXT-TO-IMAGE:\n${s.image}\n\nTEXT-TO-VIDEO / IMAGE-TO-VIDEO:\n${s.video}`).join('\n\n--------------------\n\n'),'text/plain;charset=utf-8');
+$('clear').onclick=()=>{if(confirm('Hapus semua adegan dari halaman ini?')){scenes=[];render()}};
+function download(name,content,type){const a=document.createElement('a');const url=URL.createObjectURL(new Blob([content],{type}));a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url)}
+</script>
+</body></html>
